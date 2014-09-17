@@ -1,0 +1,4 @@
+GET /index  dsd.webservices.IndexController.index
+
+GET /servico/*path      org.apache.cxf.transport.play.CxfController.handle(path)
+POST /servico/*path      org.apache.cxf.transport.play.CxfController.handle(path)
