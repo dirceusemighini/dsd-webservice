@@ -8,8 +8,6 @@ import javax.jws.WebService;
  */
 @WebService
 public interface HelloWebServiceContrato {
-//    @WebMethod(action="servico/ola/testGet")
-//    String testeGet(String resposta);
 
     @WebMethod(action="http://localhost:9000/servico/ola")
     public String sayHi(String text);
