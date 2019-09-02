@@ -4,6 +4,7 @@
 public class ExemploSpring {
     //Construtor requerido pelo Spring
     public ExemploSpring(){
+
      }
 
     private String mensagem;

@@ -10,5 +10,5 @@ import javax.jws.WebService;
 public interface HelloWebServiceContrato {
 
     @WebMethod(action="http://localhost:9000/servico/ola")
-    public String sayHi(String text);
+    public String olaMsg(String text);
 }
