@@ -1,30 +1,30 @@
 <wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:ns1="http://webservices.dsd/" name="HelloWebServiceContrato" targetNamespace="http://webservices.dsd/">
     <wsdl:types>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://webservices.dsd/" elementFormDefault="unqualified" targetNamespace="http://webservices.dsd/" version="1.0">
-            <xs:element name="sayHi" type="tns:sayHi"/>
-            <xs:element name="sayHiResponse" type="tns:sayHiResponse"/>
-            <xs:complexType name="sayHi">
+            <xs:element name="olaMsg" type="tns:olaMsg"/>
+            <xs:element name="olaMsgResponse" type="tns:olaMsgResponse"/>
+            <xs:complexType name="olaMsg">
                 <xs:sequence>
                     <xs:element minOccurs="0" name="arg0" type="xs:string"/>
                 </xs:sequence>
             </xs:complexType>
-            <xs:complexType name="sayHiResponse">
+            <xs:complexType name="olaMsgResponse">
                 <xs:sequence>
                     <xs:element minOccurs="0" name="return" type="xs:string"/>
                 </xs:sequence>
             </xs:complexType>
         </xs:schema>
     </wsdl:types>
-    <wsdl:message name="sayHiResponse">
-        <wsdl:part element="ns1:sayHiResponse" name="parameters"></wsdl:part>
+    <wsdl:message name="olaMsgResponse">
+        <wsdl:part element="ns1:olaMsgResponse" name="parameters"></wsdl:part>
     </wsdl:message>
-    <wsdl:message name="sayHi">
-        <wsdl:part element="ns1:sayHi" name="parameters"></wsdl:part>
+    <wsdl:message name="olaMsg">
+        <wsdl:part element="ns1:olaMsg" name="parameters"></wsdl:part>
     </wsdl:message>
     <wsdl:portType name="HelloWebServiceContrato">
-        <wsdl:operation name="sayHi">
-            <wsdl:input message="ns1:sayHi" name="sayHi"></wsdl:input>
-            <wsdl:output message="ns1:sayHiResponse" name="sayHiResponse"></wsdl:output>
+        <wsdl:operation name="olaMsg">
+            <wsdl:input message="ns1:olaMsg" name="olaMsg"></wsdl:input>
+            <wsdl:output message="ns1:olaMsgResponse" name="olaMsgResponse"></wsdl:output>
         </wsdl:operation>
     </wsdl:portType>
 </wsdl:definitions>
